@@ -12,6 +12,7 @@ import Books from './pages/books/index';
 import Sedes from './pages/admin/sedes';
 import Usuarios from './pages/admin/usuarios';
 import BookRead from './pages/bookRead';
+import Login from './components/log';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route path="/" element={<Login />} />
           <Route
             element={
               <NavBar>
